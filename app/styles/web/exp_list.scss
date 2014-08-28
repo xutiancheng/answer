@@ -1,0 +1,227 @@
+@import "global";
+@import "pagebar";
+
+#content {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  .nav {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .cate, .shop, .keyword, .pro, .item, .bd, .page{
+    @extend .nav;
+  }
+}
+
+/*nav cate*/
+.nav {
+  .cate, .shop {
+    height: 60px;
+    border: 1px #e8e8e8 solid;
+    line-height: 60px;
+    overflow: hidden;
+    dt, dd {
+      float: left;
+      position: relative;
+      color: #666;
+    }
+
+    dt {
+      width: 76px;
+      line-height: 60px;
+      padding-left: 24px;
+      background-color: #f8f8f8;
+      margin-right: 40px;
+
+      .icon {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        right: 12px;
+        text-decoration: none;
+        color: #999;
+      }
+    }
+
+    dd {
+      margin-right: 20px;
+
+      a {
+        color: #222;
+        padding: 1px 2px 2px 2px;
+        outline: none;
+
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+          background-color: #eb5e67;
+        }
+      }
+    }
+    .selected {
+      color: #fff;
+      text-decoration: none;
+      background-color: #eb5e67;
+    }
+  }
+  .cate {
+    /*border-bottom-style: dashed;*/
+  }
+  .shop {
+    border-top-style: none;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    dt {
+      height: 100px;
+    }
+    dd {
+      height: 40px;
+    }
+  }
+
+  .keyword {
+    margin-top: 12px;
+    height: 20px;
+    overflow: hidden;
+
+    dt {
+      margin-left: 4px;
+      margin-right: 16px;
+      float: left;
+    }
+
+    dd {
+      float: left;
+      margin-right: 22px;
+
+      a {
+        color: #4b70b6;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.pro {
+  overflow: hidden;
+  margin-top: 38px;
+  .hd {
+    text-align: left;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    height: 24px;
+    color: #222;
+    line-height: 24px;
+    padding-bottom: 6px;
+    border-bottom: 2px #222 solid;
+  }
+  .bd {
+    .item_list {
+      width: 980px;
+
+      li{
+        height: 140px;
+        border-bottom: 1px #e8e8e8 dashed;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        overflow: hidden;
+        _zoom: 1;
+        .img {
+          height: 140px;
+          width: 140px;
+          margin-right: 20px;
+          overflow: hidden;
+          float: left;
+           background: image-url('/images/ajax_load.gif') no-repeat center center;
+
+          a {
+            height: 140px;
+            width: 140px;
+            vertical-align: middle;
+            text-align: center;
+            display: table-cell;
+            *display: block;
+            *font-size: 123px;
+            *font-family: Arial;
+
+            img {
+              vertical-align: middle;
+              max-height: 140px;
+              max-width: 140px;
+              _height: 140px;
+            }
+          }
+        }
+        .info {
+          float: left;
+          overflow: hidden;
+          width: 780px;
+          _zoom: 1;
+
+          .title {
+            display: block;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: bold;
+            color: #222;
+            margin: 5px 0;
+            height: 28px;
+            letter-spacing: normal;
+            word-wrap: break-word;
+            overflow: hidden;
+            font-family: "microsoft yahei";
+
+            &:hover {
+              text-decoration: none;
+            }
+
+            .H {
+              color: #f14b57;
+              margin-left: 6px;
+            }
+          }
+          .word {
+            line-height: 20px;
+            letter-spacing: normal;
+            word-wrap: break-word;
+            height: 60px;
+            overflow: hidden;
+          }
+          .fromed {
+            margin-top: 18px;
+            height: 22px;
+            line-height: 22px;
+            overflow: hidden;
+            color: #999;
+            span {
+              padding-right: 14px;
+            }
+            .catgroy {
+              padding-left: 12px;
+              background: url('http://img.taotaosou.cn/tts-shop/images/catgroy.jpg') left center no-repeat;
+              cursor: pointer;
+            }
+            .gary {
+
+
+              img {
+                vertical-align: middle;
+                margin-right: 3px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+.page {
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}

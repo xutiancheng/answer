@@ -1,0 +1,66 @@
+@mixin alink{
+  font-size:12px;display: inline-block;vertical-align:middle;text-align: center;border: 1px solid #cecece;color:#333;padding:4px 8px;margin: 0 4px;background: #fff;
+}
+.vm-page{
+  text-align: center; 
+  font-size: 0;
+  float: right;
+  a{
+    @include alink;
+    &:hover{
+      text-decoration: none;color:#e76267;
+    }
+    &.vm-page-next{
+      color:#333;
+      margin-right: 0;
+      &:hover{
+        color:#e76267;
+      };
+    }
+    &.vm-page-prev{
+      color:#333;
+      margin-left: 0;
+      &:hover{
+        color:#e76267;
+      };
+    }
+  }
+  span{
+    @include alink;
+  }
+  s{
+    display: inline-block;text-decoration: none;margin: 0;padding: 0;
+    font-family: Tahoma;
+    font-weight:bold;
+  }
+  .vm-page-next{
+    color:#ccc;
+    margin-right: 0;
+  }
+  .vm-page-prev{
+    color:#ccc;
+    margin-left: 0;
+  }
+  .vm-page-break{
+    border: 0 none;background:none;
+  }
+  .vm-page-current{
+    color:#fff;background: #e76267;font-weight: bold;border:solid 1px #e76267
+  }
+}
+.vm-page-prev{
+  s{
+    padding-right: 6px;
+    color: #ccc;
+  }
+}
+.vm-page-next{
+  s{
+    padding-left: 6px;
+    color: #ccc;
+  }
+}
+#J_PageBar{
+  padding-bottom:10px;
+  overflow: hidden;
+}

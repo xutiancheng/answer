@@ -1,0 +1,212 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+address,cite,dfn,em,var{font-style:normal}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+small{font-size:12px}
+ol,ul{list-style:none}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+legend{color:#000}
+fieldset,img{border:0}
+button,input,select,textarea{font-size:100%}
+table{border-collapse:collapse;border-spacing:0}
+body{background: #fff;color: #323232;}
+$red:#f14b57;
+#content,#footer,#header,#page,#container{margin-left:auto;margin-right:auto}
+#header{
+  width: 960px;
+  padding: 40px 0 25px;
+  overflow: hidden;
+  zoom:1;
+}
+.headerCon{
+  width: 190px;
+  height: 48px;
+  background:image-url('/images/logo.jpg') no-repeat;
+  float: left;
+} 
+.ttsSearch{
+  width: 540px;
+  margin-left: 90px;
+  display: inline;
+  float: left;
+  .hot-query {
+    padding: 5px 0 0;
+    height: 16px;
+    overflow: hidden;
+    padding-left: 2px;
+    font-family: "Tahoma";
+    zoom:1;
+    li{
+      padding: 0 7px;
+      float: left;
+      display: inline;
+      a{
+        color:#999;
+        &:hover{
+          color:$red;
+        };
+      }
+      
+    }
+    .hot-query-highlight{
+      a{
+        color:$red;
+        &:hover{
+          color:$red;
+        };
+      }
+    }
+  }
+}
+.search-form{
+  border:solid #f14b57;
+  border-width:2px 0 2px 2px;
+}
+.search-extra{
+  position: relative;
+  background: #fff;
+  .line{
+    position: absolute;
+    line-height: 0;
+    font-size: 0;
+    border-top:1px solid #dfdfdf;
+    z-index: 1;
+    top:0;
+    left: 0;
+    width: 100%;
+  }
+  label{
+    color: #a9a9a9;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    position: absolute;
+    left: 8px;
+    top: 0;
+    z-index: 1;
+    cursor: text;
+  }
+  .button{
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    width: 90px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: $red;
+    height: 31px;
+    overflow: hidden;
+    font-family: 'Microsoft YaHei';
+    text-align: center;
+    line-height: 29px;
+    _height: 33px;
+    _line-height: 33px;
+  }
+  #mq {
+    background: 0 0;
+    height: 19px;
+    line-height:19px;
+    position: relative;
+    margin: 0;
+    padding: 5px 3px 5px 7px;
+    border: 0;
+    width: 438px;
+    z-index: 20;
+    outline:none;
+  }
+}
+.nav-list{
+  height: 34px;
+  background: $red;
+  overflow: hidden;
+  ul{
+    width: 960px;
+    overflow: hidden;
+    zoom:1;
+    margin: 0 auto;
+    li{
+      font-size: 14px;
+      line-height: 34px;
+      padding: 0 24px;
+      float: left;
+      display: inline;
+      a{
+        color: #fff;
+        &:hover{
+          color:#fff;
+        };
+      }
+    }
+    .current{
+      background:#222;
+    }
+  }
+}
+.footer-container {
+  margin-top: 20px;
+  background: #eaeaea;
+  padding: 5px 0;
+}
+
+.footer {
+  width: 960px;
+  margin: 0 auto;
+  height: 174px;
+  padding-top: 20px;
+  clear:both;
+  font-size: 12px;
+  overflow: hidden;
+  zoom:1;
+}
+
+.footer .side {
+  float: left;
+  width: 345px;
+}
+
+.footer .menu {
+  float: right;
+  padding-right: 20px;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+  display: block;
+  height: 48px;
+  width: 190px;
+  text-indent: -9999px;
+  background: image-url('/images/logo_gray.jpg') no-repeat;
+}
+
+.footer .copyright {
+  line-height: 22px;
+  color: #666;
+}
+
+.footer dl {
+  float: left;
+  margin-right: 50px;
+}
+
+.footer dt {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.footer dd {
+  line-height: 22px;
+}
+
+.footer dd a {
+  color: #666;
+}
+.footer dd a:hover{
+  color: #666;
+}

@@ -1,0 +1,488 @@
+/*advert-Top*/
+.advert-Top{
+  width: 960px;
+  height: 90px;
+  margin: 15px auto auto;
+  iframe{
+    width: 960px;
+    height: 90px;
+  }
+}
+.J_advert1{
+  display: none;
+}
+.J_advert2{
+  display: none;
+}
+iframe{
+  border:0 none;
+  padding: 0;
+  margin: 0;
+}
+.item_list ul {
+  overflow: hidden;
+  zoom: 1;
+}
+ .item_list .J_tuan li {
+  float: left;
+  position: relative;
+  width: 302px;
+  height: 220px;
+  border: 1px #e5e5e5 solid;
+  margin: 20px 24px 0 0;
+  overflow: hidden;
+  _zoom: 1;
+}
+.item_list li .img {
+  height: 180px;
+  width: 302px;
+  overflow: hidden;
+  background: url('http://img.taotaosou.cn/tts-shop/images/ajax_load.gif') no-repeat center center;
+}
+
+.item_list li .img a {
+  height: 180px;
+  width: 302px;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+.item_list li .info {
+  float: left;
+  width: 302px;
+  overflow: hidden;
+  _zoom: 1;
+}
+.item_list li .info .title {
+  display: block;
+  color: #222;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 24px;
+  height: 40px;
+  letter-spacing: normal;
+  word-wrap: break-word;
+  position: relative;
+  font-family: "microsoft yahei";
+  overflow: hidden;
+}
+.item_list li .info .title .H {
+  padding-left: 6px;
+  background-color: #fff;
+  color: #f14b57;
+  position: absolute;
+  font-size: 18px;
+  right: 16px;
+  top: 0;
+  font-weight: 700;
+}
+.advert-tuan-detail .item_list li {
+   width: 360px;
+   margin: 20px 14px 0 14px;
+   .img{
+    width: 360px;
+   }
+   .info{
+    width: 360px;
+   }
+}
+.search_list_cont{
+    width: 780px;
+    overflow: hidden;
+    .samelist{
+      padding: 18px 0 0 0;
+      overflow: hidden;
+      zoom:1;
+      li{
+        height:160px;
+        position: relative;
+        margin: 0 0 20px;
+        border-bottom: dotted 1px #b5b5b5;
+        .list_img{
+          position: absolute;
+          width: 140px;
+          height: 140px;
+          overflow: hidden;
+          a{
+            width:140px;
+            height:140px;
+            display:table-cell;
+            vertical-align:middle;
+            text-align:center;
+            *display:block;
+            *font-size:122px;
+            *font-family:Arial;
+            img{
+              vertical-align:middle;
+            }
+          }
+        }
+
+        .list_title{
+          position: absolute;
+          width: 200px;
+          height: 36px;
+          line-height:18px;
+          overflow: hidden;
+          top:11px;
+          left: 156px;
+          a{
+            color: #606060;
+            &:hover{
+              color: #606060;
+            }
+          }
+        }
+        .list_num{
+          position: absolute;
+          width:150px;
+          height:20px;
+          color: #999999;
+          top: 68px;
+          left: 156px;
+          span{
+            color: #eb5e67;
+            font-weight: bold;
+            font-family: "tahoma";
+            margin: 0 2px 0 0;
+          }
+        }
+        .list_btn{
+          position: absolute;
+          height:28px;
+          color: #fff;
+          top: 57px;
+          left: 610px;
+          span{
+            font-weight: bold;
+            font-family: "微软雅黑";
+            font-size: 12px;
+            padding: 0 10px 0 7px;
+            i{
+              font-style: normal;
+            }
+          }
+          s{
+            height: 10px;
+            width: 0;
+            display: inline-block;
+            border-right: 1px solid #fff;
+            margin: 0 10px 0 0;
+            line-height: 0;
+            font-size: 0;
+            vertical-align: middle;
+          }
+          a{
+            color: #fff;
+            float: left;
+            height: 23px;
+            background-color: #eb5e67;
+            padding: 4px 12px 1px 8px;
+            *padding: 5px 12px 0 8px;
+            &:hover{
+              background-color: #f14b57;
+            }
+          }
+        }
+        .list_price{
+          position: absolute;
+          width:120px;
+          height:50px;
+          top:48px;
+          left: 427px;
+          color: #f14b57;
+          font-family: "Tahoma";
+          font-size: 18px;
+          s{
+            color:#999999;
+            font-size: 16px;
+            display: block;
+            margin: -5px 0 0;
+          }
+          i{
+            font-size: 14px;
+            font-family: "微软雅黑";
+            font-style: normal;
+          }
+
+        }
+        .list_form{
+          position: absolute;
+          height: 35px;
+          top: 90px;
+          left: 156px;
+          img{
+            margin: 0 5px 0 0;
+          }
+        }
+      }
+    }
+    .likelist{
+      width: 805px;
+      padding: 20px 0 0 0;
+      min-height: 500px;
+      overflow: hidden;
+      zoom:1;
+      .likeli{
+        float: left;
+        height:365px;
+        width:244px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 24px 0 0;
+        .like_img{
+          position:absolute;
+          top:0;
+          left: 0;
+          width: 244px;
+          height: 244px;
+          overflow: hidden;
+          a{
+            width: 244px;
+            height: 244px;
+            display:table-cell;
+            vertical-align:middle;
+            text-align:center;
+            *display:block;
+            *font-size:213px;
+            *font-family:Arial;
+            img{
+              vertical-align:middle;
+            }
+          }
+        }
+        .like_title{
+          position:absolute;
+          top:255px;
+          left: 0;
+          width: 224px;
+          height: 36px;
+          overflow: hidden;
+          line-height: 18px;
+          a{
+            color: #606060;
+            &:hover{
+              color: #606060;
+            }
+          }
+        }
+        .like_num{
+          position:absolute;
+          top:291px;
+          left: 0;
+          width: 100px;
+          height:30px;
+          line-height: 30px;
+          color: #999;
+          overflow: hidden;
+          span{
+            color: #606060;
+            font-weight: bold;
+            font-family: "Tahoma";
+          }
+        }
+        .like_price{
+          position:absolute;
+          top:321px;
+          left: 0;
+          width: 224px;
+          height: 22px;
+          line-height: 22px;
+          overflow: hidden;
+          color: #f14b57;
+          font-size: 18px;
+          font-family: "Tahoma";
+          text-align: left;
+          i{
+            font-family: "微软雅黑";
+            font-size: 14px;
+            font-style: normal;
+            margin: 0 3px 0 0;
+          }
+        }
+        .like_btn{
+          position:absolute;
+          top:310px;
+          left: 160px;
+          height: 28px;
+          overflow: hidden;
+          a{
+            line-height:28px;
+            float: left;
+            padding: 0 17px;
+            background-color: #eb5e67;
+            color: #fff;
+            &:hover{
+              background-color: #f14b57;
+            }
+          }
+        }
+        .sameprd{
+          position:absolute;
+          width: 244px;
+          bottom: 130px;
+          left: 0;
+          overflow: hidden;
+          display: none;
+          li{
+            height: 26px;
+            line-height: 26px;
+            float: left;
+            overflow: hidden;
+            background-color: rgba(0,0,0, 0.5);
+            background-color: transparent\9;
+            filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#50000000, endcolorstr=#50000000);
+            border-bottom: solid 1px rgba(255,255,255, 0.1);
+            border-bottom: solid 1px #e2e2e2\9;
+            *border-bottom: solid 1px #e2e2e2;
+            color: #fff;
+            padding: 0 18px 0 13px;
+            width: 213px;
+            .sameprice{
+              float: right;
+              font-size: 14px;
+              font-family: "Tahoma";
+              width: 52px;
+              display: inline;
+              i{
+                font-size: 10px;
+                font-family: "微软雅黑";
+                margin: 0 3px 0 0;
+                font-style: normal;
+              }
+            }
+            .samearrow{
+              float: right;
+            }
+            .sameicon{
+              float: left;
+              width: 14px;
+              height: 15px;
+              padding: 1px 0 0 1px;
+              overflow: hidden;
+              line-height:12px;
+              color: #fff;
+              text-align: center;
+              margin:5px 10px 0 0;
+              display: inline;
+              &.s1{
+                background-color: #43b5b6;
+              }
+              &.s2{
+                background-color: #ea5862;
+              }
+              &.s3{
+                background-color: #4b70b6;
+              }
+            }
+            .samenum{
+              float: left;
+              width:75px;
+              i{
+                font-family: "Tahoma";
+                font-style: normal;
+              }
+            }
+            a{
+              float: right;
+              color: #fff;
+              margin: 0 7px 0 0;
+              display: inline;
+              &:hover{
+                color: #fff;
+              }
+            }
+          }
+        }
+        &.on{
+          .sameprd{
+            display: block;
+          }
+        }
+      }
+    }
+    .ajaxload{
+      width: 100px;
+      height: 100px;
+      margin: 200px auto;
+      background:image-url('/images/ajax_load.gif')  center center no-repeat;
+    }
+  }
+.guess{
+  font-size: 16px;
+  font-family: 'Microsoft YaHei';
+  line-height: 36px;
+  border-bottom: solid 2px #222;
+}
+
+
+.advert-fineness-search {
+  .likelist{
+    width: auto;
+    min-height: 360px;
+  }
+  .search_list_cont {
+    width: auto;
+  }
+}
+.advert-fineness-search .search_list_cont .likelist .likeli{
+  width: 220px;
+  height: 350px;
+  .like_img{
+    width: 220px;
+    height: 220px;
+    a{
+      width: 220px;
+      height: 220px;
+      *display:block;
+      *font-size:192px;
+      *font-family:Arial;
+    }
+  }
+  .like_title{
+    top:234px;
+  }
+  .like_btn{
+    top:290px;
+  }
+  .like_price{
+    top:291px;
+  }
+}
+.advert-tuan-serch{
+  .item_list li {
+    width: 330px;
+    margin: 20px 14px 0 14px;
+    .img{
+      width: 330px;
+    }
+    .info{
+      width: 330px;
+    }
+  }
+
+}
+.text_search_adv {
+  width: 990px;
+  overflow: hidden;
+  margin-top: 15px;
+  zoom:1;
+  margin: 0 auto;
+}
+.advert-text-search .search_list_cont .likelist {
+  width: 990px;
+  .likeli{
+    width: 220px;
+  }
+  .like_img{
+    width: 220px;
+
+  }
+}
+.advert-fineness-search .likelist .likeli .like_btn {
+  left: 145px;
+}
+.advert-Top{
+  display: none;
+}

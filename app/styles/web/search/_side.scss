@@ -1,0 +1,77 @@
+.search_side{
+  position: absolute;
+  top: 155px;
+  left: 50%;
+  margin: 0 0 0 320px;
+  width: 160px;
+  z-index: 10;
+  background-color: #fff;
+  .side_title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    height:26px;
+    padding: 14px 0 0 0;
+    font-family: "微软雅黑";
+  }
+  .side_border{
+    border:solid 1px #e8e8e8;
+    border-top:solid 2px #222;
+    height: 453px;
+    padding: 20px 0 0 0;
+    .side_list{
+      height: 400px;
+      width: 120px;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+      .list_ul{
+        position: relative;
+        height: 420px;
+        li{
+          height: 120px;
+          width: 120px;
+          float: left;
+          overflow: hidden;
+          margin: 0 0 20px;
+          a{
+            width:120px;
+            height:120px;
+            display:table-cell;
+            vertical-align:middle;
+            text-align:center;
+            *display:block;
+            *font-size:105px;
+            *font-family:Arial;
+            img{
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+    .list_tab{
+      text-align: center;
+      padding: 15px 0 0;
+      span{
+        display: inline-block;
+        height: 7px;
+        width: 7px;
+        background:image-url('/images/search_tabbg.png') 0 0 no-repeat;
+        margin: 0 4px 0 0;
+        font-size: 0;
+        line-height: 0;
+        cursor: pointer;
+        &.on{
+          background-position:-11px 0;
+        }
+      }
+    }
+  }
+}
+.side_stop{
+  position:fixed;
+  top: 0;
+  *position: absolute;
+  *top: 155px;
+}

@@ -1,0 +1,29 @@
+<div id="header">
+  <a title="想省钱，就用淘淘搜比价" class="headerCon" target="_blank" href="/index.html"></a>
+  <div class="ttsSearch">
+  	<form class="search-form" name="searchTop" action="/tk.html" method="get">
+  		<div class="search-extra">
+  			<input type="text" name="q" id="mq" autocomplete="off" autofocus="true" placeholder="粘贴商品链接，马上比价" value="">
+  			<span class="button" data-ga="淘淘搜比价|比价按钮">比价</span>
+            <span class="line"></span>
+  		</div>
+  	</form>
+  	<ul class="hot-query">
+      <script type="text/template" id="hot-tpl">
+      <% _.each(data, function(item, i) { %>
+			<li <%if (item.red == 1) {%>class="hot-query-highlight"<%}%>><a target="_blank" href="<%= item.clickUrl %>"><%= item.ticket %></a></li>
+      <% }); %>
+      </script>
+		</ul>
+  </div>
+</div>
+<div class="nav-list">
+	<ul>
+		<li><a target="_blank" href="#">首页</a></li>
+    <li><a target="_blank" href="/exp_list.html">帮我挑</a></li>
+		<li><a target="_blank" href="/cheap_list.html">只要9.9</a></li>
+    <li><a target="_blank" href="/spike_list.html">正在团</a></li>
+    <li><a target="_blank" href="/sale_list.html">我爱打折</a></li>
+		<li><a target="_blank" href="http://tk.taotaosou.com/">比价工具</a></li>
+	</ul>
+</div>

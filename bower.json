@@ -1,0 +1,16 @@
+{
+  "name": "tts-answer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+  	"requirejs": "~2.1.4",
+    "sass-bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "underscore": "~1.6.0",
+    "history.js":"~1.8.0",
+    "handlebars": "~1.0.0",
+    "jquery.countdown": "https://github.com/cqol/jQuery.countdown/archive/master.tar.gz"
+  },
+  "devDependencies": {}
+}
