@@ -15,198 +15,88 @@ button,input,select,textarea{font-size:100%}
 table{border-collapse:collapse;border-spacing:0}
 body{background: #fff;color: #323232;}
 $red:#f14b57;
+@mixin clearfix() {
+  *zoom:1;
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
+.clear, .section {
+  @include clearfix;
+}
 #content,#footer,#header,#page,#container{margin-left:auto;margin-right:auto}
 #header{
-  width: 960px;
-  padding: 40px 0 25px;
+  width:1000px;
+  height: 95px;
+  border-bottom:solid 1px #fff;
   overflow: hidden;
   zoom:1;
 }
 .headerCon{
-  width: 190px;
-  height: 48px;
-  background:image-url('/images/logo.jpg') no-repeat;
-  float: left;
-} 
-.ttsSearch{
-  width: 540px;
-  margin-left: 90px;
-  display: inline;
-  float: left;
-  .hot-query {
-    padding: 5px 0 0;
-    height: 16px;
-    overflow: hidden;
-    padding-left: 2px;
-    font-family: "Tahoma";
-    zoom:1;
-    li{
-      padding: 0 7px;
+      background:image-url('/images/logo.png') no-repeat;
       float: left;
-      display: inline;
-      a{
-        color:#999;
-        &:hover{
-          color:$red;
-        };
-      }
-      
-    }
-    .hot-query-highlight{
-      a{
-        color:$red;
-        &:hover{
-          color:$red;
-        };
-      }
-    }
-  }
+      width:210px;
+      height:36px;
+      margin: 30px 0 0 0;
 }
-.search-form{
-  border:solid #f14b57;
-  border-width:2px 0 2px 2px;
+.left{
+  float: left;
 }
-.search-extra{
+.right{
+  float: right;
+}
+#footer {
   position: relative;
-  background: #fff;
-  .line{
-    position: absolute;
-    line-height: 0;
-    font-size: 0;
-    border-top:1px solid #dfdfdf;
-    z-index: 1;
-    top:0;
-    left: 0;
-    width: 100%;
-  }
-  label{
-    color: #a9a9a9;
-    font-size: 12px;
-    line-height: 30px;
-    height: 30px;
-    position: absolute;
-    left: 8px;
-    top: 0;
-    z-index: 1;
-    cursor: text;
-  }
-  .button{
-    position: absolute;
-    z-index: 20;
-    right: 0;
-    width: 90px;
-    border: 0;
-    font-size: 16px;
-    cursor: pointer;
-    color: #fff;
-    background-color: $red;
-    height: 31px;
-    overflow: hidden;
-    font-family: 'Microsoft YaHei';
-    text-align: center;
-    line-height: 29px;
-    _height: 33px;
-    _line-height: 33px;
-  }
-  #mq {
-    background: 0 0;
-    height: 19px;
-    line-height:19px;
-    position: relative;
-    margin: 0;
-    padding: 5px 3px 5px 7px;
-    border: 0;
-    width: 438px;
-    z-index: 20;
-    outline:none;
-  }
-}
-.nav-list{
-  height: 34px;
-  background: $red;
-  overflow: hidden;
-  ul{
-    width: 960px;
-    overflow: hidden;
-    zoom:1;
-    margin: 0 auto;
-    li{
-      font-size: 14px;
-      line-height: 34px;
-      padding: 0 24px;
-      float: left;
-      display: inline;
-      a{
-        color: #fff;
-        &:hover{
-          color:#fff;
-        };
-      }
-    }
-    .current{
-      background:#222;
-    }
-  }
-}
-.footer-container {
-  margin-top: 20px;
-  background: #eaeaea;
-  padding: 5px 0;
-}
-
-.footer {
-  width: 960px;
-  margin: 0 auto;
   height: 174px;
   padding-top: 20px;
+  border-top: 1px solid #e6e6e6;
+  background-color: #FAFAFA;
   clear:both;
-  font-size: 12px;
-  overflow: hidden;
-  zoom:1;
+  .gs1000{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .logo-container{
+    margin: 0;
+      background:image-url('/images/f_logo.png') no-repeat;
+    .logo{      
+        display: block;
+        width: 204px;
+        height: 36px;
+        overflow: hidden;
+        text-indent: -999px;
+    }
+  }
+  .side {
+    width: 375px;
+  }
+  .menu {
+    padding-right: 20px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .copyright {
+    line-height: 19px;
+    color: #bbbbbb;
+  }
+  dl {
+    float: left;
+    margin-right: 50px;
+  }
+  dt {
+    margin-bottom: 15px;
+    color: #666666;
+  }
+  dd {
+    line-height: 22px;
+    a {
+      color: #999999;
+      &:hover {
+        color: #fe4b49;
+      };
+    }
+  }
 }
-
-.footer .side {
-  float: left;
-  width: 345px;
-}
-
-.footer .menu {
-  float: right;
-  padding-right: 20px;
-}
-
-.footer .logo {
-  margin-bottom: 20px;
-  display: block;
-  height: 48px;
-  width: 190px;
-  text-indent: -9999px;
-  background: image-url('/images/logo_gray.jpg') no-repeat;
-}
-
-.footer .copyright {
-  line-height: 22px;
-  color: #666;
-}
-
-.footer dl {
-  float: left;
-  margin-right: 50px;
-}
-
-.footer dt {
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: #555;
-}
-
-.footer dd {
-  line-height: 22px;
-}
-
-.footer dd a {
-  color: #666;
-}
-.footer dd a:hover{
-  color: #666;
+.footer_regbg #footer{
+background-color: #fff;
 }

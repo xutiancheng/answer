@@ -1,0 +1,154 @@
+@import "global";
+.login_reg{
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 630px;
+	.side{
+		float: left;
+		width: 500px;
+		margin: 54px 0 0 20px;
+		.title{
+			color: #666;
+			font-size: 14px;
+			padding: 15px 0 0 0;
+			height: 46px;
+			line-height: 42px;
+			background:image-url('/images/login_reg_01.png') 0 0 no-repeat;
+		}
+		ul{
+			padding:20px 0 0 0;
+			overflow: hidden;
+			zoom:1;
+			li{
+				position:relative;
+				height:90px;
+				border-bottom:dotted 1px #eaeaea;
+				.headimg{
+					width: 70px;
+					height: 70px;
+					overflow: hidden;
+					position: absolute;
+					border-radius:45px;
+					top: 10px;
+					left:0;
+				}
+				.username{
+					position:absolute;
+					font-size: 14px;
+					color: #fe423e;
+					left: 90px;
+					top:25px;
+				}
+				.taskname{
+					position: absolute;
+					left: 90px;
+					top:48px;
+					color: #666;
+					span{
+						color: #fe4b49;
+					}
+				}
+			}
+		}
+	}
+	.main{
+		width:400px;
+		height:375px;
+		margin:45px 20px 0 0;
+		float:right;
+		border:solid 1px #e6e6e6;
+		.line{
+			background:#fe4b49;
+			height: 3px;
+			line-height: 0;
+			font-size: 0;
+		}
+		.title{
+			line-height: 28px;
+			color: #333;
+			font-weight:bold;
+			font-size: 14px;
+			padding: 39px 0 27px 29px;
+			span{
+				color: #999;
+				font-size: 12px;
+				line-height: 18px;
+				display: block;
+			}
+		}
+		.formbox{
+			padding: 0 0 0 29px;
+		}
+		.form-input{
+			width: 328px;
+			height: 30px;
+			border: solid 1px #e6e6e6;
+			margin: 0 0 15px 0;
+			overflow: hidden;
+			input{
+				border: none;
+				background: none;
+				color: #999;
+				margin: 5px 0 0 42px;
+			}
+		}
+		.log01{
+		      background:image-url('/images/reg_icon_01.png') no-repeat;
+		}
+		.log02{
+		      background:image-url('/images/reg_icon_02.png') no-repeat;
+		}
+		.form-link{
+			width: 330px;
+			margin: 0 0 0 29px;
+			.hasid,.hasid:hover{
+				color: #666;
+			}
+			.rightnow,.rightnow:hover,.gorget,.gorget:hover{
+				color: #fe4b49;
+			}
+			.gorget{
+				float: right;
+			}
+		}
+		#j-regbtn{
+			width: 330px;
+			height: 32px;
+			border: 0;
+			background: none;
+			background-color: #fe4b49;
+			color: #fff;
+			font-size: 14px;
+			font-family: "微软雅黑";
+			text-align: center;
+			line-height: 32px;
+			margin: 17px 0 0 29px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		.fastreg{
+			margin: 26px 0 0 29px;
+			line-height: 20px;
+			color: #666;
+			vertical-align: middle;
+			a{
+				display: inline-block;
+				line-height: 20px;
+				padding:0 12px;
+				height: 20px;
+				background:image-url('/images/reg_icon_03.png') no-repeat;
+				vertical-align: middle;
+				margin: 0 12px 0 0;
+			}
+			.qq{
+				background-position:3px 0;
+			}
+			.sina{
+				background-position:-33px 0;
+			}
+			.taobao{
+				background-position:-72px 0;
+			}
+		}
+	}
+}
