@@ -1,0 +1,147 @@
+@import "global";
+@import "global_nav";
+.usercenter{
+	width: 998px;
+	border: solid 1px #e6e6e6;
+	background-color: #fff;
+	padding: 10px 0 0 0;
+	margin: 20px auto;
+	min-height: 540px;
+	@include clearfix;
+	.side{
+		padding: 10px 0 0 0;
+		width: 200px;
+		height:485px;
+		border-right:1px dotted  #efefef;
+		ul{
+			li{
+				a{	
+					display: block;
+					line-height: 32px;
+					text-align: center;
+					border: solid 1px #fff;
+					color: #333333;
+					font-size: 14px;
+					&:hover{
+						border-color:#fe4b49;
+						color: #fe4b49;
+					}
+				}
+			}
+		}
+	}
+	.main{
+		width: 720px;
+		padding: 0 0 0 0;
+		.main_title{
+			padding: 0 0 0 135px;
+			color: #333;
+			font-weight: bold;
+			line-height: 48px;
+			margin: 0 0 7px 0;
+		}
+		.form-box{
+			@include clearfix;
+			.form-side{
+				width: 110px;
+				text-align: right;
+				padding: 0 25px 0 0;
+				color: #666;
+			}
+			.f01{
+				line-height: 140px;
+				height: 140px;
+			}
+			.f02{
+				line-height:32px;
+				height:32px;
+				margin: 25px 0;
+			}
+			.f03{
+				line-height:22px;
+				height:22px;
+			}
+			.f04{
+				margin: 25px 0;
+			}
+			.f06{
+				margin: 16px 0 0 0;
+			}
+			.f07{
+				width: 110px;
+				height: 30px;
+			}
+			.form-main{
+				color: #666;
+				.change{
+					display:block;
+					line-height: 32px;
+					width: 154px;
+					text-align: center;
+					color:#fe4b49;
+					border: solid 1px #fe4b49;
+					border-radius: 3px;
+					margin: 40px 0 0 30px;
+					&:hover{
+						color:#fe4b49;
+						text-decoration: none;
+					}
+				}
+				.uheadimg{
+					width: 140px;
+					height: 140px;
+					max-width: 140px;
+					max-height: 140px;
+					cursor: pointer;
+				}
+				.prompt{
+					padding: 0 0 0 30px;
+					line-height:32px;
+					display: inline-block;
+				}
+				#j-user-sub{
+					width: 68px;
+					height: 34px;
+					line-height: 34px;
+					text-align: center;
+					color: #fff;
+					background-color: #fe4b49;
+					border-radius: 3px;
+					border: 0;
+					cursor: pointer;
+					margin: 15px 0 0 0; 
+				}
+				.text{
+					color: #666;
+					line-height: 22px;
+				}
+				.red{
+					color: red;
+				}
+				.form-input{
+					border: solid 1px #e6e6e6;
+					height: 30px;
+					width: 290px;
+					padding: 0 10px;
+					input{
+						color: #333;
+						width: 100%;
+						border: none;
+						background: none;
+						margin:5px 0 0 0;
+					}
+				}
+				.checklist{
+					color: #666;
+					line-height: 30px;
+					vertical-align: middle;
+					margin: 0 0 0 -10px;
+					input{
+						margin: 0 3px 0 10px;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+}

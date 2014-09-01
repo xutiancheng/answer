@@ -1,4 +1,13 @@
 @import "global";
+body{
+	background-color:#fff;
+}
+#footer .logo-container{
+  background:image-url('/images/f_logo.png') no-repeat;
+}
+#footer{
+background-color: #fff;
+}
 .login_reg{
 	width: 1000px;
 	margin: 0 auto;
@@ -109,6 +118,19 @@
 			}
 			.gorget{
 				float: right;
+			}
+			span{
+				float: right;
+				color: #666666;				
+				background:image-url('/images/checkbox-checked.png') 0 3px no-repeat;
+				padding: 0 0 0 17px;
+				a{
+					color: #fe4b49;
+					&:hover{
+						color:#fe4b49;
+						text-decoration:underline;
+					}
+				}
 			}
 		}
 		#j-regbtn{
