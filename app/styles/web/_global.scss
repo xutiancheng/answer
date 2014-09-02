@@ -111,3 +111,40 @@ body{
     }
   }
 }
+.qrcode{
+  position: fixed;
+  z-index: 10;
+  *position: absolute;
+  bottom: 215px;
+  *top: 400px;
+  *bottom:auto;
+  right: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 1px;
+  border:1px solid #e6e6e6;
+  background:image-url('/images/wximg.png') center center #fff no-repeat;
+  a{
+    display: block;
+    width: 38px;
+    height: 38px;
+  }
+  span{
+    display: none;
+  }
+  &:hover{
+    span{
+      position: absolute;
+      left: -56px;
+      top: 0;
+      display: block;
+      padding: 6px 8px;
+      width: 24px;
+      height: 28px;
+      line-height: 14px;
+      color: #fff;
+      border-radius: 1px;
+      background-color: #666666;
+    }
+  }
+}

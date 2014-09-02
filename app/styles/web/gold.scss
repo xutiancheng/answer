@@ -1,32 +1,64 @@
 @import "global";
 @import "global_nav";
 .gold{
-	width:998px;
-	margin: 10px auto 20px;
-	background-color: #fff;
-	border:solid 1px #e6e6e6;
+		width:998px;
+		margin: 10px auto 20px;
+		background-color: #fff;
+		border:solid 1px #e6e6e6;
 		.list{
 
-			.list-title{
-				line-height: 50px;
+				.list-title{
+					margin: 0 25px;
+					line-height: 50px;
+					color: #333;
+					font-weight: bold;
+				}
+				.list-cont{
+					margin: 0 0 0 25px;
+					width: 950px;
+					overflow: hidden;
+					height: 424px;
+					border-bottom:1px dotted  #efefef;
+					ul{
+						width: 1000px;
+						overflow: hidden;
+						@include clearfix;
+						@import "list";
+					}
+				}
+		}
+		.code{
+			height: 290px;
+			border-bottom: 1px dotted #ebebeb;
+			padding: 0 0 0 115px;
+			margin: 0 19px;
+			position: relative;
+			.codeimg{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 24px;
+				left:595px;
+				border: 19px solid #fe423e;
+				border-radius: 10px;
+				background:image-url('/images/codeimg.png') center center #fff no-repeat;
+			}
+			.userinfo{
+				padding: 92px 0 0 0;
+				line-height: 20px;
+				span{
+					color: #fe423e;
+				}
+			}
+			.code-title{
+				line-height: 30px;
+				margin: 30px 0 0 0;
+				font-size: 30px;
 				color: #333;
 			}
-			.list-cont{
-				margin: 0 0 0 25px;
-				width: 950px;
-				overflow: hidden;
-				height: 424px;
-				border-bottom:1px dotted  #efefef;
-				ul{
-					width: 1000px;
-					overflow: hidden;
-					@include clearfix;
-					@import "list";
-				}
-;
-			}
-			}
 		}
+}
+
 .gold .list .list-cont ul li{
 	margin: 0 25px 0 0;
 }

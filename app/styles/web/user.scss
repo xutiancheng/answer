@@ -22,7 +22,7 @@
 					border: solid 1px #fff;
 					color: #333333;
 					font-size: 14px;
-					&:hover{
+					&:hover,&.on{
 						border-color:#fe4b49;
 						color: #fe4b49;
 					}
