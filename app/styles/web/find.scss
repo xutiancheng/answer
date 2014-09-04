@@ -1,0 +1,118 @@
+@import "global";
+@import "global_nav";
+.find{
+	width: 898px;
+	margin: 20px auto;
+	border:solid 1px #e6e6e6;
+	background-color: #fff;
+	padding: 20px 50px;
+	.find-title{
+		border:solid 1px #f2f2f2;
+		line-height: 50px;
+		padding: 0 20px 0 42px;
+		background:image-url('/images/clock.png') 26px 17px #f8f8f8 no-repeat;
+		a,a:hover{
+			float: right;
+			line-height: 30px;
+			border: solid 1px #fe423e;
+			color: #fe423e;
+			padding: 0 14px;
+			margin:9px 0 0 10px;
+			border-radius: 2px;
+			background-color: #fff;
+		}
+		.change,.change:hover{
+			background-color: #fe423e;
+			color: #fff;
+		}
+		span{
+			color: #fe423e;
+		}
+	}
+	.find-cont{
+		margin: 20px 0 0 0;
+		@include clearfix;
+		.find-img{
+			width: 600px;
+			height: 600px;
+			float: left;
+			overflow: hidden;
+			@include imgbg;
+			div{
+				width: 600px;
+				height: 600px;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				img{
+					max-width: 600px;
+					max-height: 600px;
+					vertical-align: middle;
+				}
+			}
+		}
+		.find-side{
+			float: right;
+			width: 248px;
+			padding: 0 10px;
+			border: 1px solid #e6e6e6;
+			ul{
+				li{
+					line-height: 50px;
+					border-bottom:1px dotted #eaeaea;
+					span{
+						color: #fe423e;
+					} 
+				}
+			}
+		}
+	}
+	.find-list{
+		.find-list-title{
+			line-height: 68px;
+			color: #333;
+			font-size: 18px;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			padding: 15px 0 0 0;
+			span{
+				font-weight: normal;
+				font-size: 12px;
+				color: #ff4401;
+			}
+		}
+		.form-box{
+			height: 56px;
+			.text{
+				height: 30px;
+				border:solid 1px #e6e6e6;
+				input{
+					color: #999;
+					margin: 5px 0 0 10px;
+					width: 886px;
+					border: 0;
+					background: none;
+				}
+			}
+			.error{
+				border-color:#fe423e;
+			}
+			span{
+				color: #fe423e;
+				line-height: 22px;
+				padding: 0 0 3px 10px;
+			}
+		}	
+		.submit{
+		@include clearfix;
+			a,a:hover{
+				float: left;
+				padding:0 15px;
+				line-height: 32px;
+				background-color: #fe4b49;
+				color: #fff;
+				border-radius: 2px;
+			}
+		}	
+	}
+}

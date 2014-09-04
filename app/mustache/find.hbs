@@ -1,0 +1,57 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+  <head>
+    {{> meta}}
+    <title>淘淘搜</title>
+    <!-- build:css(.tmp) /styles/find.css -->
+    <link rel="stylesheet" href="/styles/web/find.css">
+    <!-- endbuild -->
+  </head>
+    <body>
+    {{> header}}
+    <div class="find">
+        <div class="find-title">
+            <a href="#" target="_blank">放弃答题</a><a href="#" target="_blank" class="change">换一题</a>请在<span>5</span>分<span>00</span>秒内完成完成任务，否则将作为放弃处理哦~
+        </div>
+        <div class="find-cont">
+            <div class="find-img">
+                <div><img src="http://placehold.it/600x600" /></div>
+            </div>
+            <div class="find-side">
+                <ul>
+                    <li>
+                        发起者:用户名很长
+                    </li>
+                    <li>
+                        找物类别:上衣/裤裙
+                    </li>
+                    <li>
+                        悬赏金币：<span>20</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="find-list">
+            <div class="find-list-title">我找到的淘宝链接<span>去淘宝</span></div>
+            <div class="form-box">
+                <div class="text error"><input type="text" /></div>
+                <span>提示文字</span>
+            </div>
+            <div class="form-box">
+                <div class="text"><input type="text" /></div>
+                <span>提示文字</span>
+            </div>
+            <div class="form-box">
+                <div class="text"><input type="text" /></div>
+                <span>提示文字</span>
+            </div>
+            <div class="submit"><a href="#">提交</a></div>
+        </div>
+    </div>
+    {{> footer}}
+</body>
+</html>

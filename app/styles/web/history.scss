@@ -1,0 +1,11 @@
+@import "global";
+@import "global_nav";
+@import "pagebar";
+.history{
+	width: 1000px;
+	margin: 20px auto 0;
+	.history_list{
+		border: solid 1px #e6e6e6;
+		background-color: #fff;
+	}
+}

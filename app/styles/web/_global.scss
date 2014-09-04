@@ -31,6 +31,9 @@ $red:#f14b57;
 body{
   background-color:#f5f5f5;
 }
+@mixin imgbg(){
+  background: url('/images/pic-bg.jpg') center repeat;
+}
 #content,#footer,#header,#page,#container{margin-left:auto;margin-right:auto}
 #header{
   width:100%;
@@ -40,6 +43,7 @@ body{
     width: 1000px;
     height: 95px;
     margin: 0 auto;
+    @include clearfix;
   }
   .nav-ul{
     display: none;
