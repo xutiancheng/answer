@@ -18,13 +18,30 @@
 				a{	
 					display: block;
 					line-height: 32px;
-					text-align: center;
+					padding: 0 0 0 66px;
+					text-align: left;
 					border: solid 1px #fff;
 					color: #333333;
 					font-size: 14px;
 					&:hover,&.on{
 						border-color:#fe4b49;
 						color: #fe4b49;
+					}
+				}
+				&#side-user{
+					a{
+						background:image-url('/images/setting.png') 39px center no-repeat;
+						&.on,&:hover{
+						background:image-url('/images/active-setting.png') 39px center no-repeat;
+						}
+					}
+				}
+				&#side-msg{
+					a{
+						background:image-url('/images/letter.png') 38px center no-repeat;
+						&.on,&:hover{
+						background:image-url('/images/active-letter.png') 38px center no-repeat;
+						}
 					}
 				}
 			}
