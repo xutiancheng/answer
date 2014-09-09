@@ -14,7 +14,10 @@ fieldset,img{border:0}
 button,input,select,textarea{font-size:100%}
 table{border-collapse:collapse;border-spacing:0}
 body{background: #fff;color: #323232;}
-input{outline:none} 
+input{outline:none}
+html, body {
+height: 100%;
+} 
 $red:#f14b57;
 @mixin clearfix() {
   *zoom:1;
@@ -69,6 +72,7 @@ body{
   border-top: 1px solid #e6e6e6;
   background-color: #fafafa;
   clear:both;
+  margin: -194px 0 0 0;
   .gs1000{
     width: 1000px;
     margin: 0 auto;
@@ -119,7 +123,7 @@ body{
   position: fixed;
   z-index: 10;
   *position: absolute;
-  bottom: 215px;
+  bottom: 30px;
   *top: 400px;
   *bottom:auto;
   right: 10px;
@@ -212,4 +216,11 @@ body{
       color: #fe423e;
     }
   }
+}
+.page-container{
+  width: 100%;
+  min-height:100%;
+}
+.page-container .page-main{
+  padding-bottom: 194px;
 }

@@ -1,0 +1,40 @@
+@import "global";
+@import "global_nav";
+@import "pagebar";
+.count_cont{
+	width: 1000px;
+	margin: 20px auto 0;
+	.count_list{
+		border: solid 1px #e6e6e6;
+		background-color: #fff;
+		overflow: hidden;
+		.tr{
+			border-top:solid 1px #f5f5f5;
+			@include clearfix;
+			margin: -1px 0 0 0;
+			padding: 0 0 0 30px;
+		.th{
+			line-height: 50px;
+			color: #666;
+			float: left;
+			text-align: center;
+			font-weight: bold;
+			span{
+				color: #fe423e;
+			}
+		}
+		.td{
+			line-height: 50px;
+			text-align:center;
+			color: #666;
+			float: left;
+			span{
+				color: #fe423e;
+			}
+		}
+		.list-w{
+			width: 230px;
+		}
+	}
+	}
+}

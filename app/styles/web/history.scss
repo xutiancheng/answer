@@ -1,11 +1,89 @@
 @import "global";
 @import "global_nav";
 @import "pagebar";
-.history{
+.history_cont{
 	width: 1000px;
 	margin: 20px auto 0;
 	.history_list{
 		border: solid 1px #e6e6e6;
 		background-color: #fff;
+		overflow: hidden;
+		.tr{
+			border-top:solid 1px #f5f5f5;
+			@include clearfix;
+			margin: -1px 0 0 0;
+		.th{
+			line-height: 50px;
+			color: #333;
+			float: left;
+			text-align: center;
+			font-weight: bold;
+		}
+		.td{
+			line-height: 98px;
+			text-align:center;
+			color: #666;
+			float: left;
+		}
+		}
+		.list-time{
+			width: 174px;
+		}
+		.list-name{
+			width: 118px;
+		}
+		.list-img{
+			width: 174px;
+			div{
+			 @include	imgbg;
+			 width: 80px;
+			 height: 80px;
+			 margin: 10px auto 0;
+			 overflow: hidden;
+			 span{
+			 	line-height:100%;
+			 	width: 80px;
+			 	height: 80px;
+			 	display: table-cell;
+			 	text-align: center;
+			 	vertical-align: middle;
+				 img{
+				 	max-width: 80px;
+				 	max-height: 80px;
+				 	vertical-align:middle;
+					}
+				}
+			}
+		}
+		.list-type{
+			width: 116px;
+		}
+		.list-price{
+			width: 102px;
+			span{
+				color: #fe423e;
+			}
+		}
+		.list-btn{
+			width: 150px;
+			a{
+				color: #fe423e;
+				display: inline-block;
+				line-height: 30px;
+				border:1px solid #fe423e;
+				padding: 0 10px;
+				border-radius: 3px;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+		.list-flag{
+			width: 164px;
+		}
 	}
+}
+#J_page{
+	padding: 20px 0;
+	overflow: hidden;
 }
