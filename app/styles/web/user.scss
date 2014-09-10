@@ -1,6 +1,11 @@
 @import "global";
 @import "global_nav";
 @import "pagebar";
+
+$usericon-spacing:0px;
+@import "usericon/*.png";
+@include all-usericon-sprites;
+
 .usercenter{
 	width: 998px;
 	border: solid 1px #e6e6e6;
@@ -18,30 +23,39 @@
 				a{	
 					display: block;
 					line-height: 32px;
-					padding: 0 0 0 66px;
+					padding: 0 0 0 50px;
 					text-align: left;
 					border: solid 1px #fff;
 					color: #333333;
 					font-size: 14px;
+					s{
+						display: inline-block;
+						padding:0 7px;
+						height: 14px;
+						line-height:14px;
+						vertical-align:middle;
+						margin: 0 2px 0 0;
+					}
 					&:hover,&.on{
 						border-color:#fe4b49;
 						color: #fe4b49;
 					}
 				}
-				&#side-user{
-					a{
-						background:image-url('/images/setting.png') 39px center no-repeat;
-						&.on,&:hover{
-						background:image-url('/images/active-setting.png') 39px center no-repeat;
-						}
+			}
+			#side-user{
+				a{
+					&:hover,&.on{
+						s{@extend .usericon-letter.letter_hover;}
 					}
 				}
-				&#side-msg{
-					a{
-						background:image-url('/images/letter.png') 38px center no-repeat;
-						&.on,&:hover{
-						background:image-url('/images/active-letter.png') 38px center no-repeat;
-						}
+			}
+			#side-msg{
+				a{
+					s{
+
+					}
+					&:hover,&.on{
+						s{@extend .usericon-setting.setting_hover;}
 					}
 				}
 			}
