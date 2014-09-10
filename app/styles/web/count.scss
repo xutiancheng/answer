@@ -1,9 +1,21 @@
 @import "global";
 @import "global_nav";
 @import "pagebar";
+.select{
+	padding: 20px 0 10px;
+	width: 1000px;
+	margin: 0 auto;
+	#select-date{
+		line-height:28px;
+		height: 28px;
+		border:solid 1px #e6e6e6;
+		color: #333;
+		outline: none;
+	}
+}
 .count_cont{
 	width: 1000px;
-	margin: 20px auto 0;
+	margin:0 auto;
 	.count_list{
 		border: solid 1px #e6e6e6;
 		background-color: #fff;
