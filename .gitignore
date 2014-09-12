@@ -6,3 +6,4 @@ app/styles/web/.*.css
 .sass-cache
 app/bower_components
 test/bower_components
+app/images/.DS_Store
