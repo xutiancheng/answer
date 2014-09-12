@@ -177,6 +177,19 @@ body{
   margin: -170px 0 0 -250px;
   border: 1px solid #e6e6e6;
   background-color: #fff;
+  .close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display:block;
+    width: 30px;
+    height: 30px;
+    background:image-url('/images/close.png') center center #fff  no-repeat;
+    cursor: pointer;
+    &:hover{
+      background-color:#e6e6e6;
+    }
+  }
   .s_1{
     font-size: 18px;
     line-height: 48px;
