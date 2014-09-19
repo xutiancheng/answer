@@ -120,18 +120,33 @@
 					color: #fe423e;
 					font-size: 14px;
 					font-weight: bold;
-				}
+					height: 21px;
+					width: 108px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					}
 				.task{
 					position: absolute;
 					top: 37px;
 					left: 45px;
 					color: #666;
+					height: 18px;
+					width: 108px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
 				}
 				.number{
 					color: #666;
 					position:absolute;
 					left: 45px;
 					top: 55px;
+					height: 18px;
+					width: 108px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
 					span{
 						color: #fe4b49;
 					}
