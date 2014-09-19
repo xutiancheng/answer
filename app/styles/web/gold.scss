@@ -36,12 +36,18 @@
 			.codeimg{
 				width: 200px;
 				height: 200px;
+				overflow: hidden;
 				position: absolute;
 				top: 24px;
 				left:595px;
 				border: 19px solid #fe423e;
 				border-radius: 10px;
-				background:image-url('/images/codeimg.png') center center #fff no-repeat;
+				background-color:#fff;
+				text-align:center;
+				img{
+					max-width: 200px;
+					max-height: 200px;
+				}
 			}
 			.userinfo{
 				padding: 92px 0 0 0;
