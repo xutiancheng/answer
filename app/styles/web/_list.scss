@@ -3,6 +3,7 @@
 						height: 212px;
 						float: left;
 						margin: 0 20px 0 0;
+						overflow: hidden;
 						.img{
 							border: solid 1px #f2f2f2;
 							width: 168px;
@@ -74,8 +75,17 @@
 						.name-time{
 							line-height: 32px;
 							color: #999999;
+							position: relative;
+							width: 170px;
+							overflow: hidden;
+							word-break:break-all; 
 							span{
-								float: right;
+								position: absolute;
+								right: 0;
+								line-height: 32px;
+								top: 0;
+								padding: 0 5px;
+								background-color:#fff;
 							}
 						}
 						&.on,&:hover{
