@@ -105,13 +105,15 @@
 		}	
 		.submit{
 		@include clearfix;
+		text-align: center;
 			a,a:hover{
-				float: left;
-				padding:0 15px;
+				display: inline-block;
+				padding:3px 65px;
 				line-height: 32px;
 				background-color: #fe4b49;
 				color: #fff;
 				border-radius: 2px;
+				font-size: 14px;
 			}
 		}	
 	}
