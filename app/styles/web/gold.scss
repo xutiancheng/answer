@@ -5,6 +5,23 @@
 		margin: 10px auto 20px;
 		background-color: #fff;
 		border:solid 1px #e6e6e6;
+		.exchange{
+			margin:0 25px;
+			position:relative; 
+			height: 530px;
+			background:image-url('/images/gold_mall.jpg') #fff center 50px no-repeat;
+			border-bottom: 1px dotted #ebebeb;
+			.text{
+				color: #666;
+				position:absolute;
+				top: 68px;
+				left: 44px;
+				line-height: 24px;
+				span{
+					color: #fe423e;
+				}
+			}
+		}
 		.list{
 
 				.list-title{
